@@ -54,14 +54,14 @@ public class HmacGenerator {
         if (contentType != null && !contentType.isEmpty()) {
             toSign += "\n" + contentType;
         }
-        if (nepOrganization != null && !nepOrganization.isEmpty()) {
-            toSign += "\n" + nepOrganization;
-        }
         if (nepApplicationKey != null && !nepApplicationKey.isEmpty()) {
             toSign += "\n" + nepApplicationKey;
         }
         if (nepCorrelationId != null && !nepCorrelationId.isEmpty()) {
             toSign += "\n" + nepCorrelationId;
+        }
+        if (nepOrganization != null && !nepOrganization.isEmpty()) {
+            toSign += "\n" + nepOrganization;
         }
         if (nepServiceVersion != null && !nepServiceVersion.isEmpty()) {
             toSign += "\n" + nepServiceVersion;
